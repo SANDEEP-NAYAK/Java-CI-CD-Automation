@@ -24,5 +24,12 @@ pipeline {
                 sh 'mvn verify -DiskpUnitTests'
             }
         }
+
+        stage('Maven Build'){
+
+            steps{
+                sh 'mvn clean install'
+            }
+        }
     }
 }
