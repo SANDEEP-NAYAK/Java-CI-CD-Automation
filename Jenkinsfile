@@ -96,5 +96,18 @@ pipeline {
                 }
             }
         }
+
+        stage('Pushing Docker Image to DockerHub'){
+
+            steps{
+
+                script{
+                    withCredentials([usernamePassword(credentialsId: 'dockerhubcred', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                        sh 'docker login -u \$DOCKER_USERNAME -p \$DOCKER_PASSWORD'
+                        sh'docker push sandeepdarkworld/java-application:v1.$BUILD_ID'
+                    }
+                }
+            }
+        }
     }
 }
