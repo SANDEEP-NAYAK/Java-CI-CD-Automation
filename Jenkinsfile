@@ -90,8 +90,8 @@ pipeline {
             steps{
                 script{
                     sh 'whoami'
-                    sh 'docker image build -t $JOB_NAME:v1.$BUILD_ID .'
-                    sh 'docker image tag $JOB_NAME:v1.$BUILD_ID sandeepdarkworld/$JOB_NAME:v1.$BUILD_ID'
+                    sh 'docker image build -t java-application:v1.$BUILD_ID .'
+                    sh 'docker image tag java-application:v1.$BUILD_ID sandeepdarkworld/java-application:v1.$BUILD_ID'
                     
                 }
             }
