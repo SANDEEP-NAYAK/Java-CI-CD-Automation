@@ -1,4 +1,4 @@
-﻿# Real-Time-End-To-End-Devops-CI-CD-project
+﻿# Java-CI-CD-Automation
 
 ## Introduction:
 The "Real-Time End-to-End DevOps CI/CD Project" is an industry-grade, comprehensive Continuous Integration and Continuous Deployment (CI/CD) system designed to automate the development, testing, and deployment process of a real-time Java application. This project showcases a robust DevOps workflow that incorporates cutting-edge tools such as Git, GitHub, Maven, Jenkins, SonarQube, Nexus, Docker, and DockerHub, demonstrating a state-of-the-art CI/CD pipeline for modern software development.
@@ -27,13 +27,13 @@ The CI/CD pipeline follows an end-to-end workflow that streamlines the integrati
 2. **Automated Jenkins Trigger:** The pipeline is automatically triggered through a GitHub webhook, initiating the build and deployment process whenever new code changes are pushed.
 
 3. **Unit Testing:** Maven conducts rigorous unit tests to validate the accuracy and functionality of individual components in the real-time Java application.
-
-4. **Integration Testing:** Maven verifies the seamless integration of the real-time application with external dependencies, ensuring robust end-to-end functionality.
-
+    (Unit testing is a software testing technique where individual units or components of a software application are tested in isolation to ensure their correctness and functionality)
+4. **Integration Testing:** Maven verifies the seamless integration of the real-time application with external dependencies, ensuring robust end-to-end functionality.  
+    (Integration testing is a software testing technique that verifies the interaction between different components or systems to ensure they work together as intended)
 5. **Maven Build:** Maven performs a clean build and generates a deployable artifact (JAR file) for the real-time Java application.
 
 6. **Static Code Analysis:** SonarQube conducts in-depth code analysis to detect and mitigate potential bugs, security flaws, and code quality issues.
-
+    (Static code analysis is a software testing method that analyzes the source code of a program without executing it, identifying potential issues, vulnerabilities)
 7. **Quality Gate Check:** Jenkins evaluates SonarQube reports to ensure that the code meets predefined quality standards and requirements.
 
 8. **Artifact Upload:** The generated JAR artifact is securely uploaded to Nexus, creating a central repository for storing build artifacts and dependencies.
@@ -55,3 +55,6 @@ The real-time Java application delivers dynamic output comprising real-time data
 The "Real-Time End-to-End DevOps CI/CD Project" serves as a comprehensive and up-to-date demonstration of a well-structured and automated DevOps workflow. By utilizing the latest DevOps tools, this project empowers development teams to achieve optimal efficiency, code quality, and continuous delivery of real-time Java applications in the modern software development landscape.
 
 **Resouce Link:** Project Youtube [Video Link](https://youtu.be/Yk7k3yEguQA)
+
+Notes: Here, git and github was used for CI...maven, Sonarqube, Nexus, Docker, DockerHub all these tools were used for CD(continuoud Delivery). If we have integrated K8s with this then CD(continuous Deployment) part would have been here.
+Jenkins is a CI tool which with the help of plugins can extend to support CD tools...so generally it is called CI/CD tool.
